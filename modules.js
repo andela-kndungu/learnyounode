@@ -7,6 +7,7 @@ filter(process.argv[2], process.argv[3], function(error, files) {
   // Unsuccessful, inform user
   if (error) {
     console.log('Sorry, something went wrong');
+    return;
   }
 
   for (var file of files) {
