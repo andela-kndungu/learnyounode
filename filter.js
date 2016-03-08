@@ -13,7 +13,7 @@ module.exports = function(directory, extension, callback) {
     // Call callback with error if something went wrong
     if (error) {
 
-      callback(error, null);
+      return callback(error, null);
     }
 
     // Alls good, filter the files
